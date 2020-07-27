@@ -21,7 +21,18 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-
+nav{
+  position: absolute;
+  
+height: 40px;
+width: 100vw;
+padding: 5px;
+box-sizing: border-box;
+text-align: right;
+a{
+  color: white;
+}
+}
 p {
   margin-bottom: 1.15rem;
 }
