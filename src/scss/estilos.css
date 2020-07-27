@@ -10,19 +10,40 @@ html {
 
 /*16px*/
 body {
-  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#140950), to(#0a4399));
+  background: linear-gradient(to top, #140950, #0a4399);
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.65;
-  color: #333;
+  color: rgba(255, 255, 255, 0.753);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 p {
   margin-bottom: 1.15rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 2.75rem 0 1.05rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1.15;
 }
@@ -48,18 +69,127 @@ h5 {
   font-size: 1.25em;
 }
 
-small, .text_small {
+small,
+.text_small {
   font-size: 0.8em;
 }
 
 header {
-  height: 100vh;
+  margin-top: 40px;
+}
+
+.todo__input, .todo__button {
+  outline: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 2.6px 0px 0px 2.6px;
+}
+
+.todo__button {
+  cursor: pointer;
+  color: #4a02cf;
+  margin-left: -5px;
+  border-radius: 0px 2.6px 2.6px 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.todo__button:hover {
+  color: white;
+  background-color: #4a02cf;
+}
+
+.todo__input {
+  border: none;
+}
+
+.todo__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  background: #FDC830;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#F37335), to(#FDC830));
-  background: linear-gradient(to top, #F37335, #FDC830);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo__list {
+  list-style: none;
+}
+
+.tarea {
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  background-color: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 29vw;
+  font-size: 0.9em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tarea li {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.tarea button {
+  outline: none;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.tarea .btn-completado {
+  background: #469cff;
+  color: white;
+}
+
+.tarea .btn-completado:hover {
+  background: #108da3;
+}
+
+.tarea .btn-eliminado {
+  color: white;
+  background: #be0075;
+}
+
+.tarea .btn-eliminado:hover {
+  background: #8a0055;
+}
+
+.tarea .fa-check,
+.tarea .fa-trash {
+  pointer-events: none;
+}
+
+.completado {
+  text-decoration: line-through;
+  opacity: 0.4;
+  font-style: italic;
+}
+
+.salida {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+  -webkit-transition-delay: 0.2ms;
+          transition-delay: 0.2ms;
 }
 /*# sourceMappingURL=estilos.css.map */

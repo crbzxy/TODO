@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7e58ff847e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./scss/estilos.css">
   <title>TODO Carlos</title>
 </head>
+
 <body>
-  <div class="contenedor">
-    <header>
-      <h1>Carlos`S <strong>TODO</strong></h1>
-    </header>
-    <form >
-      <input type="text" name="todo-input" id="todoInput">
-      <button class="todo-button" type="submit">
-        <i class="fas fa-plus-square"></i>
-      </button>
-    </form>
+  <header>
+    <h1>Carlos <strong>TODO</strong> list </h1>
+  </header>
+  <form>
+    <input type="text" class="todo__input" name="todo__input" id="todoInput">
+    <button class="todo__button" type="submit">
+      <i class="fas fa-plus-square"></i>
+    </button>
+  </form>
+  <div class="todo__contenedor">
+    <ul class="todo__list">
+      <!-- 
+        <div class="tarea">
+          <li class="todo__item">hey</li>
+          
+          <button class="btn-completado"><i class="fas fa-check" aria-hidden="true"></i></button>
+          
+          <button class="btn-eliminado"><i class="fas fa-trash" aria-hidden="true"></i></button></div> -->
+    </ul>
+
   </div>
-  <script src="https://kit.fontawesome.com/7e58ff847e.js" crossorigin="anonymous"></script>
+
   <script src="./js/app.js"></script>
 </body>
+
 </html>
